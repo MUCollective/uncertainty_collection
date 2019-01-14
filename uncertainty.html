@@ -64,7 +64,12 @@
                 <!--Title-->
                 <h4 class="card-title">{{item.title}}</h4>
                 <!--Text-->
-                <p class="card-text">{{item.description}}</p>
+                <div class="tag-line">
+                  <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
+                  <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
+                  <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span>
+                </div>
+                <!-- <p class="card-text">{{item.description}}</p> -->
                 <a href={{item.link}} target="_blank" class="btn btn-primary btn-dark btn-sm">{{item.button}}</a>
               </div>
 
@@ -85,7 +90,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2019 Copyright:
-      <a href="https://github.com/hdi-lab" target="_blank">HDI Lab </a>
+      <a href="https://mucollective.northwestern.edu/" target="_blank">MU Collective </a>
     </div>
     <!--/.Copyright-->
 

@@ -12,7 +12,7 @@ var data = [{
     description: "this is a description",
     link: "https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/?ex_cid=rrpromo",
     button: "Read More",
-    label: ["blog"]
+    label: ["block"]
   },
   {
     img: "img/bubble-treemap.png",
@@ -20,7 +20,7 @@ var data = [{
     description: "this is a description",
     link: "https://vimeo.com/230840520",
     button: "Read More",
-    label: ["paper"]
+    label: ["block"]
   },
   {
     img: "img/vsup.png",
@@ -28,31 +28,31 @@ var data = [{
     description: "this is a description",
     link: "https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9",
     button: "Read More",
-    label: ["paper"]
+    label: [""]
   },
   {
-    img: "https://twitter.com/IneffectiveMath",
+    img: "img/bracket-probabilities.png",
     title: "Bracket Probabilities",
     description: "this is a description",
     link: "https://twitter.com/IneffectiveMath",
     button: "Read More",
-    label: ["image"]
+    label: ["block"]
   },
   {
     img: "img/income-college.png",
-    title: "College and Income",
+    title: "Treemap",
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2017/01/18/upshot/some-colleges-have-more-students-from-the-top-1-percent-than-the-bottom-60.html",
     button: "Read More",
-    label: ["blog"]
+    label: ["block"]
   },
   {
     img: "img/misleading-job-report.png",
-    title: "Misled by the Jobs Report",
+    title: "HOPs Histogram?",
     description: "this is a description",
     link: "https://www.nytimes.com/2014/05/02/upshot/how-not-to-be-misled-by-the-jobs-report.html",
     button: "Read More",
-    label: ["blog"]
+    label: ["block"]
   },
   {
     img: "img/dither.png",
@@ -60,15 +60,15 @@ var data = [{
     description: "this is a description",
     link: "https://github.com/mjskay/uncertainty-examples/blob/master/multivariate-regression.md",
     button: "Read More",
-    label: ["Github"]
+    label: [""]
   },
   {
     img: "img/mammography.png",
-    title: "Classic mammography problem",
+    title: "Icon array for lassic mammography problem",
     description: "this is a description",
     link: "https://hal.inria.fr/hal-00717503v2/document",
     button: "Read More",
-    label: ["paper"]
+    label: ["icon"]
   },
   {
     img: "img/dotplot.png",
@@ -76,7 +76,7 @@ var data = [{
     description: "this is a description",
     link: "https://github.com/mjskay/when-ish-is-my-bus/blob/master/quantile-dotplots.md",
     button: "Read More",
-    label: ["paper", "Github"]
+    label: ["icon"]
   },
   {
     img: "img/product-plot.png",
@@ -84,7 +84,7 @@ var data = [{
     description: "this is a description",
     link: "http://vita.had.co.nz/papers/prodplots.html",
     button: "Read More",
-    label: ["paper"]
+    label: ["block"]
   },
   {
     img: "img/temperature-change.png",
@@ -92,7 +92,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming",
     button: "Read More",
-    label: ["press"]
+    label: ["line"]
   },
   {
     img: "img/income-mobility.png",
@@ -100,7 +100,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2018/03/27/upshot/make-your-own-mobility-animation.html",
     button: "Read More",
-    label: ["press"]
+    label: ["icon"]
   },
   {
     img: "img/measles.png",
@@ -108,7 +108,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.theguardian.com/society/ng-interactive/2015/feb/05/-sp-watch-how-measles-outbreak-spreads-when-kids-get-vaccinated",
     button: "Read More",
-    label: ["press"]
+    label: ["icon"]
   },
   {
     img: "img/risk-theatre.png",
@@ -116,7 +116,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/29/how-to-better-communicate-election-forecasts-in-one-simple-chart/?noredirect=on&utm_term=.a6ef7e470ef6",
     button: "Read More",
-    label: ["press"]
+    label: ["icon"]
   },
   {
     img: "img/pictograph.png",
@@ -132,7 +132,7 @@ var data = [{
     description: "this is a description",
     link: "https://xeno.graphics/bracket-probabilities/",
     button: "Read More",
-    label: ["blog"]
+    label: ["block"]
   },
   {
     img: "img/hockey.png",
@@ -140,7 +140,7 @@ var data = [{
     description: "this is a description",
     link: "http://hockeyviz.com/txt/preview1819",
     button: "Read More",
-    label: ["press"]
+    label: ["block"]
   },
   {
     img: "img/attacking-discrimination.png",
@@ -148,7 +148,7 @@ var data = [{
     description: "this is a description",
     link: "https://research.google.com/bigpicture/attacking-discrimination-in-ml/",
     button: "Read More",
-    label: ["paper"]
+    label: ["icon"]
   },
   {
     img: "img/seats.png",
@@ -156,7 +156,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2018/10/24/us/elections/2018-battle-for-congress.html",
     button: "Read More",
-    label: ["press"]
+    label: ["icon"]
   },
   {
     img: "img/facet-icon-array.png",
@@ -164,7 +164,7 @@ var data = [{
     description: "this is a description",
     link: "http://www.wiwi.uni-bielefeld.de/lehrbereiche/statoekoinf/comet/wolf/pw_files/SOFTWARE/pic.plot_examples.pdf",
     button: "Read More",
-    label: ["blog"]
+    label: ["icon"]
   },
   {
     img: "img/risk-matrix.png",
@@ -172,7 +172,7 @@ var data = [{
     description: "this is a description",
     link: "https://community.powerbi.com/t5/Desktop/Risk-matrix-chart-in-Power-BI/td-p/161587",
     button: "Read More",
-    label: ["blog"]
+    label: ["icon","block"]
   },
   {
     img: "img/reproducibility-survey.png",
@@ -180,11 +180,17 @@ var data = [{
     description: "this is a description",
     link: "https://twitter.com/babeheim/status/1063792960377053185",
     button: "Read More",
-    label: ["blog"]
+    label: ["icon","block"]
   }
 ];
 var cards_in_a_row = 3;
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
     $scope.chunkedData = chunk(data, cards_in_a_row);
+
+    $scope.tag_color = {
+      icon: "badge-default",
+      block: "badge-primary",
+      line: "badge-secondary"
+    };
 });
