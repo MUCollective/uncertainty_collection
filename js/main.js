@@ -8,7 +8,7 @@ function chunk(arr, size) {
 
 var data = [{
     img: "img/senate-race.png",
-    title: "Forecasting the race for the Senate",
+    title: "Histogram forecasting the race for the Senate",
     description: "this is a description",
     link: "https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/?ex_cid=rrpromo",
     button: "Read More",
@@ -64,7 +64,7 @@ var data = [{
   },
   {
     img: "img/mammography.png",
-    title: "Icon array for lassic mammography problem",
+    title: "Icon array for classic mammography problem",
     description: "this is a description",
     link: "https://hal.inria.fr/hal-00717503v2/document",
     button: "Read More",
@@ -144,7 +144,7 @@ var data = [{
   },
   {
     img: "img/attacking-discrimination.png",
-    title: "Attacking discrimination with smarter machine learning",
+    title: "Dotplot",
     description: "this is a description",
     link: "https://research.google.com/bigpicture/attacking-discrimination-in-ml/",
     button: "Read More",
@@ -152,7 +152,7 @@ var data = [{
   },
   {
     img: "img/seats.png",
-    title: "Seats",
+    title: "Congress seats icon array",
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2018/10/24/us/elections/2018-battle-for-congress.html",
     button: "Read More",
@@ -176,7 +176,7 @@ var data = [{
   },
   {
     img: "img/reproducibility-survey.png",
-    title: "Results of a reproducibility survey",
+    title: "Histogram with icon transition",
     description: "this is a description",
     link: "https://twitter.com/babeheim/status/1063792960377053185",
     button: "Read More",
