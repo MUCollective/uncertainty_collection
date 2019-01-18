@@ -49,13 +49,15 @@
 
         <div class="row mb-4 wow fadeIn" ng-repeat="rows in chunkedData">
           <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in rows">
-            <div class="card">
+            <a href={{item.link}} target="_blank">
+            <div class="card hoverable">
+
 
               <!--Card image-->
               <div class="view overlay">
                 <img src={{item.img}} class="card-img-top" alt="">
                 <a href={{item.link}} target="_blank">
-                  <div class="mask rgba-white-slight"></div>
+                  <!-- <div class="mask rgba-white-slight"></div> -->
                 </a>
               </div>
 
@@ -69,11 +71,10 @@
                   <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
                   <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span>
                 </div>
-                <!-- <p class="card-text">{{item.description}}</p> -->
-                <a href={{item.link}} target="_blank" class="btn btn-primary btn-dark btn-sm">{{item.button}}</a>
               </div>
 
             </div>
+            </a>
           </div>
         </div>
 

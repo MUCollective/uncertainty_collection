@@ -9,6 +9,22 @@ h1{
   font-weight: 600;
 }
 
+.card-title {
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+.card {
+  transition: transform .2s ease-out;
+}
+
+.hoverable {
+  transition: transform .1s ease-out;
+}
+
+.card:hover {
+  transform: translate(0, -8px);
+}
+
 .tag {
   padding: 2% 4%;
 }
@@ -19,4 +35,8 @@ h1{
 
 .btn {
   margin-left: 0;
+}
+
+a, a:hover {
+  color: black;
 }
