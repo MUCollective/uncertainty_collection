@@ -15,6 +15,7 @@ h1{
 
 .card {
   transition: transform .2s ease-out;
+  cursor: pointer;
 }
 
 .hoverable {
