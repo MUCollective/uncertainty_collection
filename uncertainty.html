@@ -64,12 +64,14 @@
               <!--Card content-->
               <div class="card-body">
                 <!--Title-->
+                <span class="badge">{{item.type}}</span>
                 <h4 class="card-title">{{item.title}}</h4>
                 <!--Text-->
                 <div class="tag-line">
-                  <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
+                  <span ng-repeat="label in item.label" class="badge badge-pill tag">{{label}}</span>
+                  <!-- <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
                   <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
-                  <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span>
+                  <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span> -->
                 </div>
               </div>
 
@@ -86,7 +88,7 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-middle elegant-color-dark mt-4 fadeIn">
+  <footer class="page-footer text-center font-middle mt-4 fadeIn">
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
