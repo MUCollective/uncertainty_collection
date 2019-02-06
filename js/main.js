@@ -359,7 +359,7 @@ var data = [{
     type: "Density Plot"
   },
   {
-    img: "img/Hurricane.png",
+    img: "img/Hurricane.gif",
     title: "Hurricane Florence: Keep tabs on shifting storm track",
     description: "this is a description",
     link: "https://www.axios.com/hurricane-florence-storm-track-changes-map-e8f3f5d4-7594-4b1c-b5cd-0064d0b75461.html",
