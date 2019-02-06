@@ -9,10 +9,16 @@ h1{
   font-weight: 600;
 }
 
+h3{
+  font-size: 105%;
+  text-align: center;
+  color: #9B9DAC;
+}
+
 .card-title {
   font-family: "Roboto Condensed",sans-serif;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   text-transform: capitalize;
 }
 
@@ -31,7 +37,7 @@ h1{
 
 
 .tag-line {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .badge {
@@ -40,6 +46,7 @@ h1{
   font-size: 105%;
   font-weight: 300;
   background-color: #595D73;
+  margin-top: 3%;
 }
 
 .tag {
@@ -49,6 +56,7 @@ h1{
   text-transform: capitalize;
   font-weight: bold !important;
   margin-right: 3%;
+  margin-top: 5%;
 }
 
 .btn {

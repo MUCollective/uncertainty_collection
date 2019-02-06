@@ -13,7 +13,7 @@ var data = [{
     link: "https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/?ex_cid=rrpromo",
     button: "Read More",
     label: ["block"],
-    type: "Bar Chart"
+    type: "Histogram"
   },
   {
     img: "img/bubble-treemap.png",
@@ -30,8 +30,8 @@ var data = [{
     description: "this is a description",
     link: "https://medium.com/@uwdata/value-suppressing-uncertainty-palettes-426130122ce9",
     button: "Read More",
-    label: [""],
-    type: "Palette"
+    label: ["Palette"],
+    type: "VSUP"
 
   },
   {
@@ -41,7 +41,7 @@ var data = [{
     link: "https://twitter.com/IneffectiveMath",
     button: "Read More",
     label: ["block", "time"],
-    type: ""
+    type: "Area Chart"
   },
   {
     img: "img/income-college.png",
@@ -53,13 +53,13 @@ var data = [{
     type: "Treemap"
   },
   {
-    img: "img/misleading-job-report.png",
+    img: "img/hops.gif",
     title: "How Not to Be Misled by the Jobs Report",
     description: "this is a description",
     link: "https://www.nytimes.com/2014/05/02/upshot/how-not-to-be-misled-by-the-jobs-report.html",
     button: "Read More",
     label: ["block"],
-    type: "Bar Chart"
+    type: "HOPS"
   },
   {
     img: "img/dither.png",
@@ -67,8 +67,8 @@ var data = [{
     description: "this is a description",
     link: "https://github.com/mjskay/uncertainty-examples/blob/master/multivariate-regression.md",
     button: "Read More",
-    label: [""],
-    type: ""
+    label: ["Matrix"],
+    type: "Dithering"
   },
   {
     img: "img/mammography.png",
@@ -86,7 +86,7 @@ var data = [{
     link: "https://github.com/mjskay/when-ish-is-my-bus/blob/master/quantile-dotplots.md",
     button: "Read More",
     label: ["icon", "time"],
-    type: "Quantile Dot Plot"
+    type: "Dot Plot"
   },
   {
     img: "img/product-plot.png",
@@ -104,16 +104,16 @@ var data = [{
     link: "https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming",
     button: "Read More",
     label: ["line", "Ensemble"],
-    type: "Line Ensemble"
+    type: "Density Plot"
   },
   {
-    img: "img/income-mobility.png",
+    img: "img/income_mobility.gif",
     title: "Income mobility Charts for Girls, Americans and other Groups",
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2018/03/27/upshot/make-your-own-mobility-animation.html",
     button: "Read More",
-    label: ["icon", "Ensemble", "Flow"],
-    type: "Animation"
+    label: ["icon", "Ensemble", "Flow", "animation"],
+    type: "Icon Array"
   },
   {
     img: "img/measles.png",
@@ -121,17 +121,17 @@ var data = [{
     description: "this is a description",
     link: "https://www.theguardian.com/society/ng-interactive/2015/feb/05/-sp-watch-how-measles-outbreak-spreads-when-kids-get-vaccinated",
     button: "Read More",
-    label: ["icon", "Ensemble"],
-    type: "Animation"
+    label: ["icon", "Animation"],
+    type: "Icon Array"
   },
   {
     img: "img/risk-theatre.png",
-    title: "How to better communicate election forecasts",
+    title: "Risk Theater to communicate election forecasts",
     description: "this is a description",
     link: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/29/how-to-better-communicate-election-forecasts-in-one-simple-chart/?noredirect=on&utm_term=.a6ef7e470ef6",
     button: "Read More",
-    label: ["icon", "Ensemble"],
-    type: "Risk Theater"
+    label: ["icon"],
+    type: "Icon Array"
   },
   {
     img: "img/pictograph.png",
@@ -148,8 +148,8 @@ var data = [{
     description: "this is a description",
     link: "https://fivethirtyeight.com/features/how-france-and-croatia-made-it-to-the-world-cup-final-in-one-chart/",
     button: "Read More",
-    label: ["block", "time"],
-    type: "Temporal Bracket Probability"
+    label: ["block", "time", "bracket"],
+    type: "Area Chart"
   },
   {
     img: "img/hockey.png",
@@ -158,7 +158,7 @@ var data = [{
     link: "http://hockeyviz.com/txt/preview1819",
     button: "Read More",
     label: ["block"],
-    type: "Bar Chart"
+    type: "Area Chart"
   },
   {
     img: "img/attacking-discrimination.png",
@@ -166,7 +166,7 @@ var data = [{
     description: "this is a description",
     link: "https://research.google.com/bigpicture/attacking-discrimination-in-ml/",
     button: "Read More",
-    label: ["icon", "Ensemble"],
+    label: ["icon"],
     type: "Dot Plot"
   },
   {
@@ -175,7 +175,7 @@ var data = [{
     description: "this is a description",
     link: "https://www.nytimes.com/interactive/2018/10/24/us/elections/2018-battle-for-congress.html",
     button: "Read More",
-    label: ["icon", "Ensemble"],
+    label: ["icon"],
     type: "Icon Array"
   },
   {
@@ -184,17 +184,17 @@ var data = [{
     description: "this is a description",
     link: "http://www.wiwi.uni-bielefeld.de/lehrbereiche/statoekoinf/comet/wolf/pw_files/SOFTWARE/pic.plot_examples.pdf",
     button: "Read More",
-    label: ["icon", "Ensemble"],
+    label: ["icon"],
     type: "Icon Array"
   },
   {
-    img: "img/reproducibility-survey.png",
+    img: "img/reproducibility-survey.gif",
     title: "TweenR package for visualizing the results of our reproducibility survey",
     description: "this is a description",
     link: "https://twitter.com/babeheim/status/1063792960377053185",
     button: "Read More",
-    label: ["icon","block", "Flow"],
-    type: "Animation"
+    label: ["icon","block", "animation"],
+    type: "Dot Plot"
   },
   {
     img: "img/tough_to_flip.png",
@@ -203,7 +203,7 @@ var data = [{
     link: "https://www.nytimes.com/interactive/2018/03/26/us/elections/house-races-midterms.html",
     button: "Read More",
     label: ["icon","Flow"],
-    type: "Icon Array"
+    type: "Dot Plot"
   },
   {
     img: "img/Italian_parliament.png",
@@ -220,17 +220,8 @@ var data = [{
     description: "this is a description",
     link: "https://link.springer.com/book/10.1007%2F0-387-28695-0",
     button: "Read More",
-    label: ["block"],
-    type: "Mosiac plot"
-  },
-  {
-    img: "img/house_result_comparison.png",
-    title: "Comparison of how various outlets mapped house results",
-    description: "this is a description",
-    link: "https://twitter.com/niko_tinius/status/1060185135918866433?s=12",
-    button: "Read More",
-    label: ["block", "icon", "geo"],
-    type: "Geo map"
+    label: ["block", "mosaic"],
+    type: "Area Plot"
   },
   {
     img: "img/rotated_gaussians.png",
@@ -239,7 +230,7 @@ var data = [{
     link: "https://solomonkurz.netlify.com/post/make-rotated-gaussians-kruschke-style/",
     button: "Read More",
     label: ["line", "ensemble"],
-    type: "Geo map"
+    type: "Line Ensemble"
   },
   {
     img: "img/ml_intro.png",
@@ -247,8 +238,8 @@ var data = [{
     description: "this is a description",
     link: "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
     button: "Read More",
-    label: ["icon", "flow", "tree"],
-    type: "Animation"
+    label: ["icon", "flow", "tree", "animation"],
+    type: "Icon Array"
   },
   {
     img: "img/regression_tree.png",
@@ -257,7 +248,7 @@ var data = [{
     link: "http://link.springer.com/10.1007/0-387-28695-0",
     button: "Read More",
     label: ["icon", "tree"],
-    type: "Dot plot"
+    type: "Dot Plot"
   },
   {
     img: "img/playoff_chance.png",
@@ -265,8 +256,8 @@ var data = [{
     description: "this is a description",
     link: "https://twitter.com/IneffectiveMath/status/1068613463134650369",
     button: "Read More",
-    label: [],
-    type: "Gradient"
+    label: ["heatmap"],
+    type: "Heatmap"
   },
   {
     img: "img/point_projection.png",
@@ -274,8 +265,8 @@ var data = [{
     description: "this is a description",
     link: "https://twitter.com/IneffectiveMath/status/1068613463134650369",
     button: "Read More",
-    label: [],
-    type: ""
+    label: ["interval"],
+    type: "Area Chart"
   },
   {
     img: "img/ski_events.png",
@@ -284,7 +275,7 @@ var data = [{
     link: "https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/?ex_cid=538twitter",
     button: "Read More",
     label: ["icon"],
-    type: "icon array"
+    type: "Icon Array"
   },
   {
     img: "img/wome_midterm_election.png",
@@ -292,8 +283,8 @@ var data = [{
     description: "this is a description",
     link: "https://www.bloomberg.com/graphics/2018-midterms-women-results",
     button: "Read More",
-    label: ["icon", "geo"],
-    type: "icon array"
+    label: ["icon", "map"],
+    type: "Icon Array"
   },
   {
     img: "img/easy_to_vote.png",
@@ -311,7 +302,7 @@ var data = [{
     link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
     button: "Read More",
     label: ["icon"],
-    type: "Random Icon Array"
+    type: "Icon Array"
   },
   {
     img: "img/pay_gap_ridge.png",
@@ -320,7 +311,7 @@ var data = [{
     link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
     button: "Read More",
     label: ["block"],
-    type: "Density plot"
+    type: "Density Plot"
   },
   {
     img: "img/pay_gap_dot.png",
@@ -329,7 +320,7 @@ var data = [{
     link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
     button: "Read More",
     label: ["icon"],
-    type: "Dot plot"
+    type: "Dot Plot"
   },
   {
     img: "img/race_bar.png",
@@ -338,7 +329,7 @@ var data = [{
     link: "http://www.pewsocialtrends.org/2018/11/15/early-benchmarks-show-post-millennials-on-track-to-be-most-diverse-best-educated-generation-yet/",
     button: "Read More",
     label: ["block"],
-    type: "Bar chart"
+    type: "Bar Chart"
   },
   {
     img: "img/believe_in_god.png",
@@ -346,7 +337,7 @@ var data = [{
     description: "this is a description",
     link: "http://www.pewforum.org/2018/04/25/when-americans-say-they-believe-in-god-what-do-they-mean/",
     button: "Read More",
-    label: ["tree"],
+    label: [""],
     type: ""
   },
   {
@@ -356,7 +347,7 @@ var data = [{
     link: "https://fivethirtyeight.com/features/are-white-evangelicals-sacrificing-the-future-in-search-of-the-past/",
     button: "Read More",
     label: ["block"],
-    type: "Stack Bar Chart"
+    type: "Bar Chart"
   },
   {
     img: "img/justice_survival.png",
@@ -365,7 +356,7 @@ var data = [{
     link: "https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/?ex_cid=538twitter",
     button: "Read More",
     label: ["block"],
-    type: "Density plot"
+    type: "Density Plot"
   },
   {
     img: "img/Hurricane.png",
@@ -373,8 +364,8 @@ var data = [{
     description: "this is a description",
     link: "https://www.axios.com/hurricane-florence-storm-track-changes-map-e8f3f5d4-7594-4b1c-b5cd-0064d0b75461.html",
     button: "Read More",
-    label: ["animation", "geo"],
-    type: "Map"
+    label: ["animation", "map"],
+    type: "Line Ensemble"
   },
   {
     img: "img/3d_icon_array.png",
@@ -383,7 +374,7 @@ var data = [{
     link: "http://fingfx.thomsonreuters.com/gfx/rngs/MYANMAR-ROHINGYA/010050XD232/index.html",
     button: "Read More",
     label: ["icon", "3D"],
-    type: "Icon array"
+    type: "Icon Array"
   },
   {
     img: "img/safe_ski.png",
@@ -392,7 +383,7 @@ var data = [{
     link: "https://multimedia.scmp.com/news/world/article/safety-aviation-2017/index.html",
     button: "Read More",
     label: ["icon"],
-    type: "Icon array"
+    type: "Icon Array"
   },
   {
     img: "img/bexit_vote.png",
@@ -401,7 +392,7 @@ var data = [{
     link: "https://www.bloomberg.com/graphics/2018-brexit-portraits/",
     button: "Read More",
     label: ["icon"],
-    type: "Icon array"
+    type: "Icon Array"
   },
   {
     img: "img/presidential_approval.png",
@@ -409,8 +400,8 @@ var data = [{
     description: "this is a description",
     link: "https://www.safaribooksonline.com/library/view/the-truthful-art/9780133440492/ch07.html#ch07",
     button: "Read More",
-    label: ["block", "ensemble"],
-    type: ""
+    label: ["block"],
+    type: "Line Ensemble"
   },
   {
     img: "img/soccer_prediction.png",
@@ -419,7 +410,7 @@ var data = [{
     link: "https://fivethirtyeight.com/methodology/how-our-club-soccer-predictions-work/",
     button: "Read More",
     label: ["block"],
-    type: ""
+    type: "Heatmap"
   }
 ];
 var cards_in_a_row = 3;
