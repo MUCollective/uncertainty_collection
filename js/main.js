@@ -195,6 +195,231 @@ var data = [{
     button: "Read More",
     label: ["icon","block", "Flow"],
     type: "Animation"
+  },
+  {
+    img: "img/tough_to_flip.png",
+    title: "To Reclaim the House, Democrats Need to Flip 24 G.O.P. Seats.",
+    description: "this is a description",
+    link: "https://www.nytimes.com/interactive/2018/03/26/us/elections/house-races-midterms.html",
+    button: "Read More",
+    label: ["icon","Flow"],
+    type: "Icon Array"
+  },
+  {
+    img: "img/Italian_parliament.png",
+    title: "Italy elections 2018 polls: who is running and why it matters",
+    description: "this is a description",
+    link: "https://ig.ft.com/italy-poll-tracker/",
+    button: "Read More",
+    label: ["icon"],
+    type: "Icon Array"
+  },
+  {
+    img: "img/mosaic_titanic.png",
+    title: "Age and gender of Titanic survivors",
+    description: "this is a description",
+    link: "https://link.springer.com/book/10.1007%2F0-387-28695-0",
+    button: "Read More",
+    label: ["block"],
+    type: "Mosiac plot"
+  },
+  {
+    img: "img/house_result_comparison.png",
+    title: "Comparison of how various outlets mapped house results",
+    description: "this is a description",
+    link: "https://twitter.com/niko_tinius/status/1060185135918866433?s=12",
+    button: "Read More",
+    label: ["block", "icon", "geo"],
+    type: "Geo map"
+  },
+  {
+    img: "img/rotated_gaussians.png",
+    title: "Make rotated Gaussians, Kruschke style",
+    description: "this is a description",
+    link: "https://solomonkurz.netlify.com/post/make-rotated-gaussians-kruschke-style/",
+    button: "Read More",
+    label: ["line", "ensemble"],
+    type: "Geo map"
+  },
+  {
+    img: "img/ml_intro.png",
+    title: "A visual introduction to machine learning",
+    description: "this is a description",
+    link: "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
+    button: "Read More",
+    label: ["icon", "flow", "tree"],
+    type: "Animation"
+  },
+  {
+    img: "img/regression_tree.png",
+    title: "Regression tree predicting accident rates",
+    description: "this is a description",
+    link: "http://link.springer.com/10.1007/0-387-28695-0",
+    button: "Read More",
+    label: ["icon", "tree"],
+    type: "Dot plot"
+  },
+  {
+    img: "img/playoff_chance.png",
+    title: "Likelihood of making playoffs given finishing with a certain number of points",
+    description: "this is a description",
+    link: "https://twitter.com/IneffectiveMath/status/1068613463134650369",
+    button: "Read More",
+    label: [],
+    type: "Gradient"
+  },
+  {
+    img: "img/point_projection.png",
+    title: "Point projections for NHL teams with gutters showing some number of standard deviations",
+    description: "this is a description",
+    link: "https://twitter.com/IneffectiveMath/status/1068613463134650369",
+    button: "Read More",
+    label: [],
+    type: ""
+  },
+  {
+    img: "img/ski_events.png",
+    title: "Some ski events are easier to finish than others",
+    description: "this is a description",
+    link: "https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/?ex_cid=538twitter",
+    button: "Read More",
+    label: ["icon"],
+    type: "icon array"
+  },
+  {
+    img: "img/wome_midterm_election.png",
+    title: "Women in Congress Near Breakthrough Moment in Midterm Elections",
+    description: "this is a description",
+    link: "https://www.bloomberg.com/graphics/2018-midterms-women-results",
+    button: "Read More",
+    label: ["icon", "geo"],
+    type: "icon array"
+  },
+  {
+    img: "img/easy_to_vote.png",
+    title: "How easy it is to vote in your state",
+    description: "this is a description",
+    link: "https://www.washingtonpost.com/graphics/2018/politics/voter-access/?utm_term=.29c3cd6e5eb7",
+    button: "Read More",
+    label: ["Gradient"],
+    type: ""
+  },
+  {
+    img: "img/data_right_person.png",
+    title: "How do I tell if I am dating the right guy?",
+    description: "this is a description",
+    link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
+    button: "Read More",
+    label: ["icon"],
+    type: "Random Icon Array"
+  },
+  {
+    img: "img/pay_gap_ridge.png",
+    title: "Women are more likely to be underpaid in certain sectors",
+    description: "this is a description",
+    link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
+    button: "Read More",
+    label: ["block"],
+    type: "Density plot"
+  },
+  {
+    img: "img/pay_gap_dot.png",
+    title: "Companies have reported gender pay figures",
+    description: "this is a description",
+    link: "https://public.tableau.com/en-us/s/gallery/am-i-dating-right-person",
+    button: "Read More",
+    label: ["icon"],
+    type: "Dot plot"
+  },
+  {
+    img: "img/race_bar.png",
+    title: "Post-Millennials – today’s 6- to 21-year-olds, also known as Generation Z ",
+    description: "this is a description",
+    link: "http://www.pewsocialtrends.org/2018/11/15/early-benchmarks-show-post-millennials-on-track-to-be-most-diverse-best-educated-generation-yet/",
+    button: "Read More",
+    label: ["block"],
+    type: "Bar chart"
+  },
+  {
+    img: "img/believe_in_god.png",
+    title: "Nine-in-ten Americans believe in a higher power, but just a slim majority (56%) believes in God as described in the Bible",
+    description: "this is a description",
+    link: "http://www.pewforum.org/2018/04/25/when-americans-say-they-believe-in-god-what-do-they-mean/",
+    button: "Read More",
+    label: ["tree"],
+    type: ""
+  },
+  {
+    img: "img/generation_shift.png",
+    title: "A generational shift in religious identity",
+    description: "this is a description",
+    link: "https://fivethirtyeight.com/features/are-white-evangelicals-sacrificing-the-future-in-search-of-the-past/",
+    button: "Read More",
+    label: ["block"],
+    type: "Stack Bar Chart"
+  },
+  {
+    img: "img/justice_survival.png",
+    title: "How long will the court's liberal wing last?",
+    description: "this is a description",
+    link: "https://fivethirtyeight.com/features/the-45-best-and-weirdest-charts-we-made-in-2018/?ex_cid=538twitter",
+    button: "Read More",
+    label: ["block"],
+    type: "Density plot"
+  },
+  {
+    img: "img/Hurricane.png",
+    title: "Hurricane Florence: Keep tabs on shifting storm track",
+    description: "this is a description",
+    link: "https://www.axios.com/hurricane-florence-storm-track-changes-map-e8f3f5d4-7594-4b1c-b5cd-0064d0b75461.html",
+    button: "Read More",
+    label: ["animation", "geo"],
+    type: "Map"
+  },
+  {
+    img: "img/3d_icon_array.png",
+    title: "Mass exodus: The scale of the Rohingya crisis",
+    description: "this is a description",
+    link: "http://fingfx.thomsonreuters.com/gfx/rngs/MYANMAR-ROHINGYA/010050XD232/index.html",
+    button: "Read More",
+    label: ["icon", "3D"],
+    type: "Icon array"
+  },
+  {
+    img: "img/safe_ski.png",
+    title: "The safest skies record",
+    description: "this is a description",
+    link: "https://multimedia.scmp.com/news/world/article/safety-aviation-2017/index.html",
+    button: "Read More",
+    label: ["icon"],
+    type: "Icon array"
+  },
+  {
+    img: "img/bexit_vote.png",
+    title: "Portrait of Brexit Britain: A Divided Nation Makes a Journey Into the Unknown",
+    description: "this is a description",
+    link: "https://www.bloomberg.com/graphics/2018-brexit-portraits/",
+    button: "Read More",
+    label: ["icon"],
+    type: "Icon array"
+  },
+  {
+    img: "img/presidential_approval.png",
+    title: "Presidential approval frequency",
+    description: "this is a description",
+    link: "https://www.safaribooksonline.com/library/view/the-truthful-art/9780133440492/ch07.html#ch07",
+    button: "Read More",
+    label: ["block", "ensemble"],
+    type: ""
+  },
+  {
+    img: "img/soccer_prediction.png",
+    title: "From projected goals to a match forecast",
+    description: "this is a description",
+    link: "https://fivethirtyeight.com/methodology/how-our-club-soccer-predictions-work/",
+    button: "Read More",
+    label: ["block"],
+    type: ""
   }
 ];
 var cards_in_a_row = 3;
