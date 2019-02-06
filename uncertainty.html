@@ -16,6 +16,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <!-- Initializations -->
 
@@ -50,32 +51,32 @@
         <div class="row mb-4 wow fadeIn" ng-repeat="rows in chunkedData">
           <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in rows">
             <a href={{item.link}} target="_blank">
-            <div class="card hoverable">
+              <div class="card hoverable">
 
 
-              <!--Card image-->
-              <div class="view overlay">
-                <img src={{item.img}} class="card-img-top" alt="">
-                <a href={{item.link}} target="_blank">
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
+                <!--Card image-->
+                <div class="view overlay">
+                  <img src={{item.img}} class="card-img-top" alt="">
+                  <a href={{item.link}} target="_blank">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
 
-              <!--Card content-->
-              <div class="card-body">
-                <!--Title-->
-                <span class="badge">{{item.type}}</span>
-                <h4 class="card-title">{{item.title}}</h4>
-                <!--Text-->
-                <div class="tag-line">
-                  <span ng-repeat="label in item.label" class="badge badge-pill tag">{{label}}</span>
-                  <!-- <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
+                <!--Card content-->
+                <div class="card-body">
+                  <!--Title-->
+                  <span class="badge">{{item.type}}</span>
+                  <h4 class="card-title">{{item.title}}</h4>
+                  <!--Text-->
+                  <div class="tag-line">
+                    <span ng-repeat="label in item.label" class="badge badge-pill tag">{{label}}</span>
+                    <!-- <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
                   <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
                   <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span> -->
+                  </div>
                 </div>
-              </div>
 
-            </div>
+              </div>
             </a>
           </div>
         </div>
