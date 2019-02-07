@@ -41,7 +41,7 @@ var data = [{
     link: "https://twitter.com/IneffectiveMath",
     button: "Read More",
     label: ["block", "time"],
-    type: "Area Chart"
+    type: "Sankey Chart"
   },
   {
     img: "img/income-college.png",
@@ -149,7 +149,7 @@ var data = [{
     link: "https://fivethirtyeight.com/features/how-france-and-croatia-made-it-to-the-world-cup-final-in-one-chart/",
     button: "Read More",
     label: ["block", "time", "bracket"],
-    type: "Area Chart"
+    type: "Sankey Chart"
   },
   {
     img: "img/hockey.png",
@@ -266,7 +266,7 @@ var data = [{
     link: "https://twitter.com/IneffectiveMath/status/1068613463134650369",
     button: "Read More",
     label: ["interval"],
-    type: "Area Chart"
+    type: "Sankey Chart"
   },
   {
     img: "img/ski_events.png",
@@ -347,7 +347,7 @@ var data = [{
     link: "https://fivethirtyeight.com/features/are-white-evangelicals-sacrificing-the-future-in-search-of-the-past/",
     button: "Read More",
     label: ["block"],
-    type: "Bar Chart"
+    type: "Sankey Chart"
   },
   {
     img: "img/justice_survival.png",
