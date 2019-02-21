@@ -104,7 +104,7 @@ var data = [{
     link: "https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming",
     button: "Read More",
     label: ["line", "Ensemble"],
-    type: "Density Plot"
+    type: "Line Ensemble"
   },
   {
     img: "img/income_mobility.gif",
@@ -416,8 +416,8 @@ var data = [{
 var cards_in_a_row = 3;
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
-    $scope.chunkedData = chunk(data, cards_in_a_row);
-
+    //$scope.chunkedData = chunk(data, cards_in_a_row);
+    $scope.data = data;
     $scope.tag_color = {
       icon: "badge-default",
       block: "badge-primary",
