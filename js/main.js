@@ -1,10 +1,10 @@
-function chunk(arr, size) {
-  var newArr = [];
-  for (var i = 0; i < arr.length; i += size) {
-    newArr.push(arr.slice(i, i + size));
-  }
-  return newArr;
-}
+// function chunk(arr, size) {
+//   var newArr = [];
+//   for (var i = 0; i < arr.length; i += size) {
+//     newArr.push(arr.slice(i, i + size));
+//   }
+//   return newArr;
+// }
 
 var data = [{
     img: "img/senate-race.png",
@@ -413,7 +413,7 @@ var data = [{
     type: "Heatmap"
   }
 ];
-var cards_in_a_row = 3;
+// var cards_in_a_row = 3;
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
     //$scope.chunkedData = chunk(data, cards_in_a_row);
