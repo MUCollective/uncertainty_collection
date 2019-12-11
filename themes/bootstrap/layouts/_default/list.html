@@ -1,0 +1,78 @@
+{{ define "main" }}
+    <main class="mt-5 pt-5">
+      <h1 class="mb-4 text-center">
+            <strong>Probabilistic Visualization Collection</strong>
+      </h1>
+      <h3>Curated By Xiaoying Pu, Puhe Liang, Matthew Kay</h3>
+      <div class="container">
+
+
+        <!--Section: Jumbotron-->
+
+        <hr class="my-5">
+
+        <!--Section: Cards-->
+        <section class="text-left">
+
+
+          <!-- <div class="row mb-4 wow fadeIn" ng-repeat="rows in chunkedData"> -->
+          <div class="row mb-4 wow fadeIn">
+            <!-- <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in data"> -->
+
+            <!-- ==== BEGIN CARD ===== -->
+            {{ $pages := .Pages }}
+            {{ if .IsHome }}
+              {{ $pages = .Site.RegularPages }}
+            {{ end }}
+
+            {{ range $pages }}
+            <div class="col-lg-4 col-md-6 mb-4">
+              <a href="{{ .RelPermalink }}" target="_blank">
+                <div class="card hoverable">
+                  <!--Card image-->
+                  <div class="view overlay">
+                    {{$images := .Resources.ByType "image"}}
+                    {{with $images.GetMatch "*cover*" }}
+                      <img src="{{ .Permalink }}" class="card-img-top" alt="">
+                    {{end}}
+
+                    <a href="{{ .RelPermalink }}" target="_blank">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+
+
+                  <!--Card content-->
+                  <div class="card-body">
+                    <!--Title-->
+                    <span class="badge">{{ .Params.Coverage }}</span>
+                    <a href="{{ .RelPermalink }}" target="_blank">
+                      <h4 class="card-title">{{ .Title }}</h4>
+                    </a>
+                    <!--Text-->
+                    <div class="tag-line">
+                      <span class="badge badge-pill tag">{{ .Params.Tags }}</span>
+                      <!-- <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
+                      <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
+                      <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span> -->
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            {{ end }}
+            <!-- ==== END CARD ===== -->
+          </div>
+
+        </section>
+        <!--Section: Cards-->
+
+      </div>
+    </main>
+  
+  <!--Main layout-->
+
+  {{- partial "footer.html" . -}}
+
+{{ end }}
