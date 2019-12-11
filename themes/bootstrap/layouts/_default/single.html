@@ -17,6 +17,13 @@
       </div>
       <div class="col-md-9 flex-first flex-md-unordered">
         <h1 class="mb-4 text-left">{{ .Title }}</h1>
+        <a href="{{ .Params.link }}">{{ .Params.link }}</a>
+        <!-- Post Featured Image -->
+        {{$images := .Resources.ByType "image"}}
+        {{with $images.GetMatch "*cover*" }}
+            <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="thumbnail for this post">
+        {{end}}
+
       </div>
     </div>
   </div>

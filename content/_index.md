@@ -2,10 +2,7 @@
 site: blogdown:::blogdown_site
 ---
 
-
-
-
-[Collection](/visualization/)
+### Supplemental material to _A Probabilistic Grammar of Graphics_.
 
 Citation
 

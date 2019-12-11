@@ -3,13 +3,19 @@
       <h1 class="mb-4 text-center">
             <strong>Probabilistic Visualization Collection</strong>
       </h1>
-      <h3>Curated By Xiaoying Pu, Puhe Liang, Matthew Kay</h3>
+      <h3>Curated By Xiaoying Pu, Puhe Liang, and Matthew Kay</h3>
       <div class="container">
 
 
         <!--Section: Jumbotron-->
 
+
+        <div class="text-center">
+          {{ .Content }}
+        <div>
+
         <hr class="my-5">
+
 
         <!--Section: Cards-->
         <section class="text-left">
@@ -51,11 +57,15 @@
                     </a>
                     <!--Text-->
                     <div class="tag-line">
-                      <span class="badge badge-pill tag">{{ .Params.Tags }}</span>
-                      <!-- <span ng-show="item.label[0] == 'icon'" class="ng-hide badge badge-pill badge-default tag">icon</span>
-                      <span ng-show="item.label[0] == 'block' || item.label[1] == 'block'" class="ng-hide badge badge-pill badge-primary tag">block</span>
-                      <span ng-show="item.label[0] == 'line' || item.label[1] == 'line' || item.label[2] == 'line'" class="ng-hide badge badge-pill badge-secondary tag">line</span> -->
-
+                      {{ $taxo := "tags" }} <!-- Use the plural form here -->
+                          {{ range .Param $taxo }}
+                              {{ $name := . }}
+                              {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                                  <!-- <li><a href="{{ .Permalink }}">{{ $name }}</a></li> -->
+                                  <span class="badge badge-pill tag">{{ $name }}</span>
+                              {{ end }}
+                          {{ end }}
+                      <!-- <span class="badge badge-pill tag">{{ .Params.Tags }}</span> -->
                     </div>
                   </div>
                 </div>
@@ -70,9 +80,7 @@
 
       </div>
     </main>
-  
-  <!--Main layout-->
 
-  {{- partial "footer.html" . -}}
+
 
 {{ end }}
