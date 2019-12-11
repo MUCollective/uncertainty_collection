@@ -1,5 +1,26 @@
 {{ define "main" }}
-<section id="main">
+
+<main class="mt-5 pt-5" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 pl-0">
+        <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+        <h5 id="wordcount"> {{ .WordCount }} Words </h5>
+
+        {{ with .Params.tags }}
+        <ul id="tags">
+          {{ range . }}
+            <li> <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <h1 class="mb-4 text-left">{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+<!-- <section id="main">
   <h1 id="title">{{ .Title }}</h1>
   <div>
         <article id="content">
@@ -36,5 +57,5 @@
           <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
         {{ end }}
     </div>
-</aside>
+</aside> -->
 {{ end }}
