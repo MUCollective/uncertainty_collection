@@ -30,6 +30,8 @@
 
           <!-- <div class="row mb-4 wow fadeIn" ng-repeat="rows in chunkedData"> -->
           <div class="row mb-4 wow fadeIn">
+          <!-- <div class="card-deck"> -->
+
             <!-- <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in data"> -->
 
             <!-- ==== BEGIN CARD ===== -->
@@ -41,7 +43,7 @@
             {{ range $pages }}
             <div class="col-lg-4 col-md-6 mb-4">
               <a href="{{ .RelPermalink }}" target="_blank">
-                <div class="card hoverable">
+                <div class="card hoverable h-100">
                   <!--Card image-->
                   <div class="view overlay">
                     {{$images := .Resources.ByType "image"}}
@@ -53,7 +55,6 @@
                       <div class="mask rgba-white-slight"></div>
                     </a>
                   </div>
-
 
                   <!--Card content-->
                   <div class="card-body">
