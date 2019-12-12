@@ -3,25 +3,34 @@
 <main class="mt-5 pt-5" >
   <div class="container">
     <div class="row">
-      <div class="col-md-2 pl-0">
-        <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-        <h5 id="wordcount"> {{ .WordCount }} Words </h5>
+      <!-- <div class="col-md-2 pl-0"> -->
+        <!-- <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+        <h5 id="wordcount"> {{ .WordCount }} Words </h5> -->
 
-        {{ with .Params.tags }}
+        <!-- {{ with .Params.tags }}
         <ul id="tags">
           {{ range . }}
             <li> <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
           {{ end }}
         </ul>
         {{ end }}
-      </div>
-      <div class="col-md-9 flex-first flex-md-unordered">
+      </div> -->
+      <div class="col-md-8 offset-md-2 flex-first flex-md-unordered">
         <h1 class="mb-4 text-left">{{ .Title }}</h1>
+        <div class="tag-line">
+          {{ $taxo := "tags" }} <!-- Use the plural form here -->
+              {{ range .Param $taxo }}
+                  {{ $name := . }}
+                  {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                      <a href="{{ .Permalink }}" class="badge badge-pill badge-light" id="main">{{ $name }}</a>
+                  {{ end }}
+              {{ end }}
+        </div>
         <a href="{{ .Params.link }}">{{ .Params.link }}</a>
         <!-- Post Featured Image -->
         {{$images := .Resources.ByType "image"}}
         {{with $images.GetMatch "*cover*" }}
-            <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="thumbnail for this post">
+            <img class="img-fluid rounded mx-auto d-block" src="{{ .Permalink }}" alt="thumbnail for this post">
         {{end}}
 
       </div>
