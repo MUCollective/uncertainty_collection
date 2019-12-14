@@ -1,0 +1,94 @@
+{{ define "main" }}
+    <main class="mt-5 pt-5">
+      <!-- <h1 class="mb-4 text-center">
+            <strong>A Probabilistic Grammar of Graphics</strong>
+      </h1> -->
+      <!-- <h3>Curated By Xiaoying Pu, Puhe Liang, and Matthew Kay</h3> -->
+      <div class="container">
+
+
+        <div class="text-left">
+          {{ .Content }}
+        <div>
+
+        <hr class="my-5">
+
+
+        <!--Section: Cards-->
+        <section class="text-left">
+
+
+          <!-- <div class="row mb-4 wow fadeIn" ng-repeat="rows in chunkedData"> -->
+          <div class="row mb-4 wow fadeIn">
+          <!-- <div class="card-deck"> -->
+
+            <!-- <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in data"> -->
+
+            <!-- ==== BEGIN CARD ===== -->
+            {{ $pages := .Pages }}
+            {{ if .IsHome }}
+              {{ $pages = .Site.RegularPages }}
+            {{ end }}
+
+            {{ $post_paginator := .Paginate ($pages) 3 }}
+
+
+            {{ range $post_paginator.Pages }}
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <a href="{{ .RelPermalink }}" target="_blank">
+                <div class="card hoverable h-100">
+                  <!--Card image-->
+                  <div class="view overlay">
+                    {{$images := .Resources.ByType "image"}}
+                    {{with $images.GetMatch "*cover*" }}
+                      <img src="{{ .Permalink }}" class="card-img-top" alt="">
+                    {{end}}
+
+                    <a href="{{ .RelPermalink }}" target="_blank">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+
+                  <!--Card content-->
+                  <div class="card-body">
+                    <!--Title-->
+                    <span class="badge">{{ .Params.Coverage }}</span>
+                    <!-- <a href="{{ .RelPermalink }}" target="_blank">
+                      <h4 class="card-title">{{ .Title }}</h4>
+                    </a> -->
+                    <!--Text-->
+                    <div class="tag-line">
+                      {{ $taxo := "tags" }} <!-- Use the plural form here -->
+                          {{ range .Param $taxo }}
+                              {{ $name := . }}
+                              {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                                  <a href="{{ .Permalink }}" class="badge badge-pill badge-light">{{ $name }}</a>
+                              {{ end }}
+                          {{ end }}
+                      <!-- <span class="badge badge-pill tag">{{ .Params.Tags }}</span> -->
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {{ end }}
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="card hoverable h-100">
+                <div class="card-body bg-light align-items-center d-flex justify-content-center">
+                  <a href="{{ .Site.Params.index.url }}"> <h3>See the Gallery</h3> </a>
+                </div>
+                </div>
+            </div>
+            <!-- ==== END CARD ===== -->
+          </div>
+
+        </section>
+        <!--Section: Cards-->
+
+      </div>
+    </main>
+
+
+
+{{ end }}

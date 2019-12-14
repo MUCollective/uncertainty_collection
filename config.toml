@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Probabilistic Visualization Collection"
+title = "A Probabilistic Grammar of Graphics"
 # theme = "mediumish-gohugo-theme"
 theme = "bootstrap"
 publishDir = "../MUCollective.github.io/"
@@ -14,10 +14,15 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.R$"]
 [[menu.main]]
     name = "Home"
     url = "/"
+    weight = 1
 [[menu.main]]
-    name = "Visualizations"
+    name = "Gallery"
     url = "/visualization/"
-
+    weight = 2
+[[menu.main]]
+    name = "R Package "
+    url = "/about/"
+    weight = 3
 
 [taxonomies]
   category = "categories"
@@ -52,3 +57,5 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.R$"]
       subtitle = "Supplemental to "
       mdtext = ""
       alertbar = true
+      url = "/visualization/"
+    

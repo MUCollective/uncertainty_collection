@@ -1,9 +1,2 @@
-Citation
 
-```{bibtex}
-@article{
-  title:
-  authors:
-
-}
-```
+[GitHub repo](https://github.com/MUCollective/uncertainty-gog)

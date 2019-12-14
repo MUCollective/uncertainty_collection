@@ -2,4 +2,26 @@
 site: blogdown:::blogdown_site
 ---
 
-### Supplemental material to _A Probabilistic Grammar of Graphics_.
+# Paper
+
+```{bibtex}
+
+```
+
+
+-----
+
+# R package
+
+TODO
+
+
+
+## Documentation
+
+TODO
+
+
+-----
+
+# Probabilistic Visualization Gallery
