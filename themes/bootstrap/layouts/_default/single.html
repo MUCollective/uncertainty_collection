@@ -2,6 +2,8 @@
 
 <main class="mt-5 pt-5" >
   <div class="container">
+
+
     <div class="row">
       <!-- <div class="col-md-2 pl-0"> -->
         <!-- <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
@@ -15,8 +17,20 @@
         </ul>
         {{ end }}
       </div> -->
+      {{ if eq .Section "visualization" }}
       <div class="col-md-8 offset-md-2 flex-first flex-md-unordered">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ .Site.Params.index.url }}">Gallery</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="{{ "/coverage/" | relLangURL}}{{ .Params.coverage | urlize }}">{{ .Params.coverage }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+        {{ end }}
+
         <h1 class="mb-4 text-left">{{ .Title }}</h1>
+        <h3 class="text-left">Source: <a href="{{ .Params.link }}">{{ .Params.link }}</a></h3>
+
         <div class="tag-line">
           {{ $taxo := "tags" }} <!-- Use the plural form here -->
               {{ range .Param $taxo }}
@@ -26,7 +40,6 @@
                   {{ end }}
               {{ end }}
         </div>
-        <a href="{{ .Params.link }}">{{ .Params.link }}</a>
         <!-- Post Featured Image -->
         {{$images := .Resources.ByType "image"}}
         {{with $images.GetMatch "*cover*" }}

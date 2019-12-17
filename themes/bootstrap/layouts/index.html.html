@@ -11,7 +11,7 @@
           {{ .Content }}
         <div>
 
-        <hr class="my-5">
+        <!-- <hr class="my-5"> -->
 
 
         <!--Section: Cards-->
@@ -30,10 +30,10 @@
               {{ $pages = .Site.RegularPages }}
             {{ end }}
 
-            {{ $post_paginator := .Paginate ($pages) 3 }}
+            <!-- {{ $post_paginator := .Paginate ($pages) 3 }} -->
 
 
-            {{ range $post_paginator.Pages }}
+            {{ range  first 3 $pages }}
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
               <a href="{{ .RelPermalink }}" target="_blank">
                 <div class="card hoverable h-100">
@@ -75,10 +75,12 @@
             {{ end }}
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div class="card hoverable h-100">
+                <a class="stretched-link" href="{{ .Site.Params.index.url | urlize }}"> </a>
                 <div class="card-body bg-light align-items-center d-flex justify-content-center">
-                  <a href="{{ .Site.Params.index.url }}"> <h3>See the Gallery</h3> </a>
+                  <h3>See the Gallery</h3>
                 </div>
-                </div>
+
+              </div>
             </div>
             <!-- ==== END CARD ===== -->
           </div>
